@@ -47,6 +47,8 @@ fetch('http://localhost:3008/weather?address='+ locationValue).then((response) =
         } else {
             // console.log(data.location);
             // console.log(data.forecast);
+
+            
             messageOne.textContent = data.location;
             messageTwo.textContent = data.forecast;
         }
