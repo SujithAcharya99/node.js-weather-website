@@ -157,6 +157,6 @@ app.get('*', (req, res) =>{
 //app.com/help
 //app.com/about
 
-app.listen(3008, () =>{
-    console.log('server is runing.... on port : 3008');
+app.listen(3000, () =>{
+    console.log('server is runing.... on port : 3000');
 });
