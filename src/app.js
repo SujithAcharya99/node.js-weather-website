@@ -12,6 +12,7 @@ const viewsPath = path.join(__dirname,'../views_1/views');
 const partialsPath = path.join(__dirname,'../views_1/partials')
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
@@ -153,6 +154,6 @@ app.get('*', (req, res) =>{
    
 });
 
-app.listen(3000, () =>{
-    console.log('server is runing.... on port : 3000');
+app.listen(port, () =>{
+    console.log('server is runing.... on port :' + port);
 });
